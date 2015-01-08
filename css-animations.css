@@ -1,0 +1,27 @@
+
+/* CSS3 Animations */
+
+/* key frames are important to making animations work */
+/*
+* the percent represents a percentage of the time for the animation defined in the animate property below 
+* be aware of vendor-prefixes
+* instead of percentages you can use the 'from' and 'to' keywords, ex: @keyframes test { from { background} to {background} }
+* the content between the {} can be expanded to different styles, i.e. 25% {background, box-shadow, transform}
+*/
+@keyframes getGloomy {
+	0% { background: #ffffff }
+	25% { background: #dddddd;}
+	50% { background: #aaaaaa;}
+	75% { background: #777777;}
+	100% {background: #000000;}
+}
+
+/* 
+* animate property: [name of keyframe] [time] [duration] [reverse at the end];
+* beware of vendor prefix
+* -webkit-animation: [name] [time];
+*
+*/
+#boxToAnimate {
+	animate: getGloomy 5s infinite alternate; /* continuously loops */
+}
