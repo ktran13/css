@@ -1,0 +1,22 @@
+/* CSS Transitions */
+
+
+/*
+* note the vendor prefixes, if necessary
+* basically the transition propety takes in:
+{ transition: [properties that may change, ex. background, width] [time] }
+* the time is the amount of seconds it takes to transition to the new property definition when an event happens (i.e. hover)
+*/
+/*
+* example: this element when hovered will transition from a black background to a red background and have a width of 200px after 2s;
+* this can also be transition: all 2s; [all representing all properties that may change]
+*/
+.element {
+	background: #000000;
+	transition: background, width 2s;
+}
+
+.element:hover {
+	background: #ffff00;
+	width: 200px;
+}
